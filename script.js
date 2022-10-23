@@ -46,6 +46,15 @@ function play(){
 function myFunction() {
     document.getElementById("demo").innerHTML = "1) Open Console(ctrl+shift+J[For windows] or cmd+option+J[For Mac])\<br><br>2)Hit the button in Play Section.\<br><br>3)Enter your choice amoung Rock, Paper, Scissor in the pop-up.\<br><br>4)After entering your choice, hit ok button from pop-up.\<br><br><b><u>NOTE:)Make sure you enter the word as it is displayed in the POP-UP.</u></b>\<br><br>5)View your result in console.\<br><br>6)Thank you.&#128512;";
   }
-  
+
+const bg = document.getElementById('GameInstructions');
+function colorChange(){
+        bg.style.backgroundColor='blue';
+}
+function colorRemove(){
+    bg.style.backgroundColor='#DDDDDD';
+}
+bg.addEventListener("mouseenter",colorChange);
+bg.addEventListener("mouseout",colorRemove);
 
 
