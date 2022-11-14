@@ -6,45 +6,45 @@ function getComputerChoice(){
 function rock(){
     const item = "Rock";
     const item2 = getComputerChoice();
-    console.log("Computer chose "+ item2);
+    document.getElementById("comp_choice").innerText = "Computer Chose "+ item2;
     if(item2=="Paper"){
-        console.warn("You lost!!!");
+        document.getElementById("result").innerText = "Sorry,you lost";
         }
         else if(item2=="Scissor"){
-        console.log("You won");
+            document.getElementById("result").innerText = "You Won";
         }
         else if(item2=="Rock"){
-            console.error("Both chose same item, its a tie!!");
+            document.getElementById("result").innerText = "Its a tie";
         }
 }
 
 function paper(){
     const item = "Paper";
     const item2 = getComputerChoice();
-    console.log("Computer chose "+ item2);
+    document.getElementById("comp_choice").innerText = "Computer Chose "+ item2;
     if(item2=="Scissor"){
-        console.warn("You lost!!!");
+        document.getElementById("result").innerText = "Sorry,you lost";
         }
         else if(item2=="Rock"){
-        console.log("You won");
+            document.getElementById("result").innerText = "You Won";
         }
         else if(item2=="Paper"){
-            console.error("Both chose same item, its a tie!!");
+            document.getElementById("result").innerText = "Its a tie";
         }
 }
 
 function scissor(){
     const item = "Scissor";
     const item2 = getComputerChoice();
-    console.log("Computer chose "+ item2);
+    document.getElementById("comp_choice").innerText = "Computer Chose "+ item2;
     if(item2=="Rock"){
-        console.warn("You lost!!!");
+        document.getElementById("result").innerText = "Sorry,you lost";
         }
         else if(item2=="Paper"){
-        console.log("You won");
+            document.getElementById("result").innerText = "You Won";
         }
         else if(item2=="Scissor"){
-            console.error("Both chose same item, its a tie!!");
+            document.getElementById("result").innerText = "Its a tie";
         }
 }
 
